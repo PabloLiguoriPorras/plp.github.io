@@ -170,8 +170,23 @@ main {
 }
 
 @media (max-width: 768px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    width: 520px;
+  }
+
   .project-card {
-    flex: 0 0 90%;
+    background-color: var(--dark);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
   }
 }
 
