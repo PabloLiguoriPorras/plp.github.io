@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - PLP Development</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">PLP <span>Development</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="selected">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact-header">
+      <h1>Contact Me</h1>
+      <p>Let's get in touch — feel free to reach out on any of the platforms below.</p>
+    </section>
+
+    <section class="contact-cards">
+      <div class="contact-card">
+        <h3>Instagram</h3>
+        <a href="https://www.instagram.com/pabloliguoriporras/" target="_blank">@pabloliguoriporras</a>
+      </div>
+
+      <div class="contact-card">
+        <h3>X</h3>
+        <a href="https://x.com/snw_dev" target="_blank">@snw_dev</a>
+      </div>
+
+      <div class="contact-card">
+        <h3>GitHub</h3>
+        <a href="https://github.com/PabloLiguoriPorras" target="_blank">PabloLiguoriPorras</a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Telegram</h3>
+        <a href="https://t.me/pabloliguoriporras" target="_blank">@pabloliguoriporras</a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Phone</h3>
+        <button class="copy-button" id="copyPhoneBtn">Copy phone number</button>
+      </div>
+
+      <div class="contact-card">
+        <h3>Mail me</h3>
+        <a href="mailto:pablo.liguori@outlook.com">pablo.liguori@outlook.com</a>
+      </div>
+
+      <div class="fin-card">
+        <h3>Let's collaborate</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>PLP</h3>
+        <p>© 2025 All rights reserved</p>
+      </div>
+      <div class="footer-contact">
+        <a href="privacy.html">Privacy & Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('copyPhoneBtn').addEventListener('click', function () {
+      const phoneNumber = '+39 366 963 9819';
+
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(phoneNumber)
+          .then(() => {
+            alert('Phone number copied to clipboard!');
+          })
+          .catch(() => {
+            alert('Failed to copy. You can copy it manually.');
+          });
+      } else {
+        alert('Clipboard not supported in this browser.');
+      }
+    });
+  </script>
+</body>
+</html>
